@@ -306,9 +306,9 @@ else:
 st.subheader("⚠️ Strategy Risk Level")
 st.write("Risk Indicator:", f"{risk:,.2f}")
 
-if risk > 1000:
+if risk > 0.30:
     st.error("High Risk Strategy")
-elif risk > 500:
+elif risk > 0.15:
     st.warning("Moderate Risk Strategy")
 else:
     st.success("Stable Strategy")
